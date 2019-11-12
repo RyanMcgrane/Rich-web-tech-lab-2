@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <title>Lab2: Part 1</title>
+        <link rel="stylesheet" type="text/css" href="Assets/Css/style.css">
+    </head>
+  
+    <body>
+        <br>
+        <h1>Phone Directory</h1>
+        <br>
+
+        <div id="addContact" class="addContactPanel">
+            <form id="contact" action="#" >
+                <div>
+                    <label>
+                        <input type="text" name="name" id="name" placeholder="Contact Name"/>
+                    </label>
+
+                    <label>
+                        <input type="tel" name="phone" id="phone" placeholder="Mobile Number"/>
+                    </label>
+
+                    <label>
+                        <input type="email" name="email" id="email" placeholder="Email"/>
+                    </label>
+
+                    <input name="submit" type="button" value="Add Contact" onclick="createEntry();"/>                   
+                </div>
+            </form>
+        </div>
+
+        <div id="search" class="addContactPanel">
+            <h1>Search Contacts</h1>
+
+             Search contact by Mobile No:
+
+            <input type="text" class="search_field" name="search" id="myInput" onkeyup="telSearch()"/>
+        </div>
+
+        <table id="myTable">
+        </table>
+
+        <div id="errorMessage">User Input Invalid</div>
+        <div id="null_search">User search returned empty</div>
+
+        <script src="Assets/JavaScript/main.js"></script>
+    </body>    
+</html>
